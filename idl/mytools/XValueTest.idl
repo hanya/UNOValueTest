@@ -1,0 +1,227 @@
+
+#ifndef __MYTOOLS_XVALUETEST_IDL__
+#define __MYTOOLS_XVALUETEST_IDL__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#include <com/sun/star/container/NoSuchElementException.idl>
+
+module mytools {
+
+/** Interfaces having methods returns values.
+    
+*/
+interface XValueTest : ::com::sun::star::uno::XInterface
+{
+    /** 
+        
+    */
+    void getVoid();
+    
+    /** 
+        
+    */
+    char getChar();
+    
+    /** 
+        
+    */
+    boolean getBoolean();
+    
+    /** 
+        
+    */
+    byte getByte();
+    
+    /** 
+        
+    */
+    short getShort();
+    
+    /** 
+        
+    */
+    unsigned short getUnsignedShort();
+    
+    /** 
+        
+    */
+    long getLong();
+    
+    /** 
+        
+    */
+    unsigned long getUnsignedLong();
+    
+    /** 
+        
+    */
+    hyper getHyper();
+    
+    /** 
+        
+    */
+    unsigned hyper getUnsignedHyper();
+    
+    /** 
+        
+    */
+    float getFloat();
+    
+    /** 
+        
+    */
+    double getDouble();
+    
+    /** 
+        
+    */
+    string getString();
+    
+    /** 
+        
+    */
+    type getType();
+    
+    /**
+    
+    */
+    ::com::sun::star::uno::XInterface getInterface();
+    
+    /** 
+        
+    */
+    void setChar( [in] char c );
+    
+    /** 
+        
+    */
+    void setBoolean( [in] boolean b );
+    
+    /** 
+        
+    */
+    void setByte( [in] byte n );
+    
+    /** 
+        
+    */
+    void setShort( [in] short n );
+    
+    /** 
+        
+    */
+    void setUnsignedShort( [in] unsigned short n );
+    
+    /** 
+        
+    */
+    void setLong( [in] long n );
+    
+    /** 
+        
+    */
+    void setUnsignedLong( [in] unsigned long n );
+    
+    /** 
+        
+    */
+    void setHyper( [in] hyper n );
+    
+    /** 
+        
+    */
+    void setUnsignedHyper( [in] unsigned hyper n );
+    
+    /** 
+        
+    */
+    void setFloat( [in] float f );
+    
+    /** 
+        
+    */
+    void setDouble( [in] double d );
+    
+    /** 
+        
+    */
+    void setString( [in] string s );
+    
+    /** 
+        
+    */
+    void setType( [in] type t );
+    
+    /**
+    
+    */
+    void setInterface( [in] ::com::sun::star::uno::XInterface rInterface);
+    
+    
+    /** Calls testParamMode method on the interface has been set by 
+        setInterface method.
+    */
+    boolean testOutParam();
+    
+    /**
+    
+    */
+    boolean testParamMode( [in] long i, [out] long v, [inout] long u );
+    
+    
+    /** 
+    
+    */
+    boolean testOutParam2();
+    
+    /**
+    
+    */
+    void testParamMode2( [out] long i, [in] long v, [out] long u );
+    
+    
+    /**
+    
+    */
+    void testRuntimeException();
+    
+    /**
+    
+    */
+    void testNoSuchElementException() 
+        raises(com::sun::star::container::NoSuchElementException);
+    
+    /**
+        
+    */
+    boolean testThrowException();
+    
+    /**
+    
+    */
+    boolean testNoMethod();
+    
+    /**
+    
+    */
+    boolean testNoAttribute();
+    
+    /**
+    
+    */
+    boolean testAttribute();
+    
+    /**
+    
+    */
+    [attribute] long IntValue;
+    
+    
+};
+
+};
+
+#endif

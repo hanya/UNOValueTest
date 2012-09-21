@@ -1,0 +1,82 @@
+
+#ifndef __MYTOOLS_VALUES_IDL__
+#define __MYTOOLS_VALUES_IDL__
+
+module mytools {
+
+/** 
+    
+*/
+struct Values
+{
+    /** 
+        
+    */
+    char CharValue;
+    
+    /** 
+        
+    */
+    boolean BooleanValue;
+    
+    /** 
+        
+    */
+    byte ByteValue;
+    
+    /** 
+        
+    */
+    short ShortValue;
+    
+    /** 
+        
+    */
+    unsigned short UnsignedShortValue;
+    
+    /** 
+        
+    */
+    long LongValue;
+    
+    /** 
+        
+    */
+    unsigned long UnsignedLongValue;
+    
+    /** 
+        
+    */
+    hyper HyperValue;
+    
+    /** 
+        
+    */
+    unsigned hyper UnsignedHyperValue;
+    
+    /** 
+        
+    */
+    float FloatValue;
+    
+    /** 
+        
+    */
+    double DoubleValue;
+    
+    /** 
+        
+    */
+    string StringValue;
+    
+    /** 
+        
+    */
+    type TypeValue;
+    
+    
+};
+
+};
+
+#endif

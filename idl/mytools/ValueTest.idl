@@ -1,0 +1,38 @@
+
+#ifndef __MYTOOLS_VALUETEST_IDL__
+#define __MYTOOLS_VALUETEST_IDL__
+
+#include <mytools/XValueTest.idl>
+#include <mytools/Values.idl>
+#include <com/sun/star/lang/XInitialization.idl>
+
+module mytools {
+
+/** 
+ */
+service ValueTest : XValueTest
+{
+    /** 
+        
+    */
+    //interface XValueTest;
+    
+    /** 
+        
+    */
+    //interface ::com::sun::star::lang::XInitialization;
+    
+    /** 
+        
+    */
+    create();
+    
+    /**
+    
+    */
+    createWithValues( [in] Values values );
+};
+
+};
+
+#endif
